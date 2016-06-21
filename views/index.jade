@@ -1,0 +1,117 @@
+extends layout
+
+block content
+    script(src='/javascripts/index.js')
+    nav.navbar
+        h1.brand.top.light m
+        h6.brand.top.light 02
+        button.btn.btn-default.pull-right.top.light.nav-buttons Buy now
+        button#trial-button.btn.pull-right.top.light.nav-buttons Get free trial
+
+    .container.col-md-8.center-block
+        h1.text-center.dark Share your Files with Ease
+        br
+        h4.text-center.light We push ourselves to new levels of inspired excellence with each project and we sweat creativity.
+
+    #graph
+        RIP
+
+    .container.col-md-11.center-block.text-center
+        h2.dark We push ourselves to new levels of inspired excellence with each project and we sweat creativity. You won't see anything until we're done drooling at the result
+        br
+        button.btn.btn-success Buy now for €23
+
+    .divider
+        hr
+        button.glyphicon.glyphicon-chevron-down.center-block.btn.btn-default.dark#carousel-button
+        hr
+
+    #carousel.carousel.slide(data-ride="carousel").collapse
+        <!-- Wrapper for slides -->
+        .carousel-inner(role="listbox")
+            .item.active
+                .container
+                    .col-md-3.text-center
+                        h1 img
+                    .col-md-9
+                        h2.light "Just started using awesome Module. Great way to boost the hard designing or prototyping process. Also a perfect tool for creative studios and freelancers"
+            .item
+                .container
+                    h2.light "Ayoo"
+            .item
+                .container
+                    h2.light "Ayoo breh"
+            .item
+                .container
+                    h2.light "Test content"
+
+        <!-- Left and right controls -->
+        a.left.carousel-control(href="#carousel", role="button", data-slide="prev")
+            span.glyphicon.glyphicon-menu-left(aria-hidden="true")
+            span.sr-only Previous
+        a.right.carousel-control(href="#carousel", role="button", data-slide="next")
+            span.glyphicon.glyphicon-menu-right(aria-hidden="true")
+            span.sr-only Next
+
+    #licenses.container
+        h1.dark.text-center Choose Your License
+        .row
+            #left.col-md-4.panel.panel-default
+                    .corner-info
+                        a.light(href="#")
+                            h4 i
+                    .panel-heading.text-center
+                        h2.dark Personal
+                        br
+                        h5.light Just started using awesome Module. Great way to boost the hard designing#[br]or prototyping  process.
+                    .panel-body
+                        h1#free.col-md-4.pricing Free
+                        p.light.text-left.col-md-8.pricing Per month billed annually or $250 from month to month
+                        button.btn.btn-success.btn-license Get it
+            #middle.col-md-4.panel.panel-default
+                    .corner-info
+                        a.light(href="#")
+                            h4 i
+                    .panel-heading.text-center
+                        h2.dark Agency
+                        br
+                        h5.light Also a perfect tool for creative studios and freelancers.
+                    .panel-body
+                        h1.col-md-4.pricing.dark #[sup $]123
+                        p.light.text-left.col-md-8.pricing Per month billed annually or $250 from month to month
+                        button.btn.btn-success.btn-license Buy now
+            #right.col-md-4.panel.panel-default
+                    .corner-info
+                        a.light(href="#")
+                            h4 i
+                    .panel-heading.text-center
+                        h2.dark Unlimited
+                        br
+                        h5.light Living in today's metropolitan world of cellular phones, mobile computers.
+                    .panel-body
+                        h1.col-md-4.pricing.dark #[sup $]232
+                        p.light.text-left.col-md-8.pricing Per month billed annually or $250 from month to month
+                        button.btn.btn-success.btn-license Buy now
+
+    #interact.container.col-md-7.center-block.text-center
+        h1.dark Become One of Us
+        br
+        h4.light Module 01 is big, stylish and handy UI Kit, full of many useful elements
+        .input-group.input-group-lg
+            span.input-group-addon
+                span.light.glyphicon.glyphicon-send
+            input.form-control(type="email", placeholder="E-mail address")
+            span.input-group-btn
+                button.btn.btn-success(type="button") Let's chat!
+
+    #nav-bottom.text-center
+        ul.list-inline
+            li.col-md-3.text-left IMG
+            #inner.col-md-6
+                ul.list-inline
+                    li #[a(href="/apps") Apps]
+                    li #[a(href="/gadgets") Gadgets]
+                    li #[a(href="/science") Science]
+                    li #[a(href="/nature") Nature]
+                    li #[a(href="/creative") Creative]
+            li.col-md-3.text-right #[span.glyphicon.glyphicon-copyright-mark] 2016 Great Simple
