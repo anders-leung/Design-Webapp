@@ -97,13 +97,22 @@ nav {
     padding-top: -23px;
 }
 
+#carousel .carousel-inner .center-block {
+    width: 80%;
+    margin-top: 5%;
+}
+
+#carousel .carousel-inner .credentials {
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
 #carousel .carousel-control {
     background: none;
 }
 
 #carousel .glyphicon {
     color: #e7eaec;
-    font-size: 28px;
 }
 
 /* Lincenses styles */
@@ -121,7 +130,7 @@ nav {
 }
 
 #licenses .panel {
-    border: 0;
+    border: #ffffff solid 1px;
     overflow: hidden;
 }
 

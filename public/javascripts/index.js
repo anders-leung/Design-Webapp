@@ -13,7 +13,7 @@ $(document).ready(function() {
             $(this).css('border', '#cee0ee solid 1px');
             $(this).find('.corner-info').show();
         }, function() {
-            $(this).css('border', '0');
+            $(this).css('border', '#ffffff solid 1px');
             $(this).find('.corner-info').hide();
         });
 });

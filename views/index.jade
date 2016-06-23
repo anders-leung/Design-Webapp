@@ -30,21 +30,14 @@ block content
         <!-- Wrapper for slides -->
         .carousel-inner(role="listbox")
             .item.active
-                .container
-                    .col-md-3.text-center
+                .center-block
+                    .image.col-xs-2.col-md-2.text-center
                         h1 img
-                    .col-md-9
-                        h2.light "Just started using awesome Module. Great way to boost the hard designing or prototyping process. Also a perfect tool for creative studios and freelancers"
-            .item
-                .container
-                    h2.light "Ayoo"
-            .item
-                .container
-                    h2.light "Ayoo breh"
-            .item
-                .container
-                    h2.light "Test content"
-
+                    .comment.col-xs-10.col-md-10
+                        h2.dark "Just started using awesome Module. Great way to boost the hard designing or prototyping process. Also a perfect tool for creative studios and freelancers"
+                        .credentials
+                            p.dark Irina Bykova
+                            p.light Photographer works with Slack team
         <!-- Left and right controls -->
         a.left.carousel-control(href="#carousel", role="button", data-slide="prev")
             span.glyphicon.glyphicon-chevron-left(aria-hidden="true")
@@ -65,7 +58,7 @@ block content
                     br
                     h5.light Just started using awesome Module. Great way to boost the hard designing#[br]or prototyping  process.
                 .panel-body
-                    h1#free.col-md-4.col-xs-12 Free
+                    h1#free.col-xs-12.col-md-4 Free
                     p.light.text-left.col-md-8 Per month billed annually or $250 from month to month
                     button.btn.btn-success.btn-license Get it
             #middle.col-md-4.panel.panel-default
@@ -77,7 +70,7 @@ block content
                     br
                     h5.light Also a perfect tool for creative studios and freelancers.
                 .panel-body
-                    h1.col-md-4.dark.col-xs-12 #[sup $]123
+                    h1.col-xs-12.col-md-4.dark #[sup $]123
                     p.light.text-left.col-md-8 Per month billed annually or $250 from month to month
                     button.btn.btn-success.btn-license Buy now
             #right.col-md-4.panel.panel-default
@@ -89,7 +82,7 @@ block content
                     br
                     h5.light Living in today's metropolitan world of cellular phones, mobile computers.
                 .panel-body
-                    h1.col-md-4.dark.col-xs-12 #[sup $]232
+                    h1.dark.col-xs-12.col-md-4 #[sup $]232
                     p.light.text-left.col-md-8 Per month billed annually or $250 from month to month
                     button.btn.btn-success.btn-license Buy now
 
