@@ -212,31 +212,49 @@ nav {
     height: 390px;
 }
 
-#interact .input-group {
-    height: 60px;
-}
-
-#interact .input-group-addon {
-    -webkit-appearance: none;
-    outline: none;
-    background: transparent;
-    border-right: 0;
-}
-
 #interact .glyphicon-send {
     color: #e1e8ee;
     margin-right: -15px;
 }
 
-#interact input {
-    height: 60px;
-    border-left: 0;
-    text-align: left;
+.input-group .icon-addon .form-control {
+    border-radius: 5px 0 0 5px;
+}
+
+.icon-addon {
+    position: relative;
+    color: #555;
+    display: block;
+}
+
+.icon-addon .glyphicon {
+    position: absolute;
+    z-index: 3;
+    left: 10px;
+    font-size: 14px;
+    width: 20px;
+    margin-left: -2.5px;
+    text-align: center;
+    padding: 10px 0;
+    top: 1px
+}
+
+.icon-addon.addon-lg .form-control {
+    line-height: 1.33;
+    height: 46px;
+    font-size: 18px;
+    padding: 10px 16px 10px 40px;
+}
+
+.icon-addon.addon-lg .glyphicon {
+    font-size: 18px;
+    margin-left: 0;
+    left: 11px;
+    top: 4px;
 }
 
 #interact .btn-success {
     width: 140px;
-    height: 60px;
 }
 
 
@@ -315,9 +333,6 @@ nav {
 @media only screen and (min-device-width:992px) and (max-device-width : 1281px) {
     #licenses h1, #licenses p {
         width: 100%;
-    }
-
-    #interact {
     }
 }
 

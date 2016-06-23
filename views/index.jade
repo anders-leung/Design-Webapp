@@ -13,8 +13,7 @@ block content
         br
         h4.text-center.light We push ourselves to new levels of inspired excellence with each project and we sweat creativity.
 
-    #graph
-        RIP
+    #graph.container
 
     .container.col-md-11.center-block.text-center
         h2.dark We push ourselves to new levels of inspired excellence with each project and we sweat creativity. You won't see anything until we're done drooling at the result
@@ -51,7 +50,7 @@ block content
         .row
             #left.col-md-4.panel.panel-default
                 .corner-info
-                    a.light(href="#")
+                    a.light(href="/")
                         h4 i
                 .panel-heading.text-center
                     h2.dark Personal
@@ -63,7 +62,7 @@ block content
                     button.btn.btn-success.btn-license Get it
             #middle.col-md-4.panel.panel-default
                 .corner-info
-                    a.light(href="#")
+                    a.light(href="/")
                         h4 i
                 .panel-heading.text-center
                     h2.dark Agency
@@ -75,7 +74,7 @@ block content
                     button.btn.btn-success.btn-license Buy now
             #right.col-md-4.panel.panel-default
                 .corner-info
-                    a.light(href="#")
+                    a.light(href="/")
                         h4 i
                 .panel-heading.text-center
                     h2.dark Unlimited
@@ -90,21 +89,24 @@ block content
         h1.dark Become One of Us
         br
         h4.light Module 01 is big, stylish and handy UI Kit, full of many useful elements
-        .input-group.input-group-lg
-            span.input-group-addon
-                span.light.glyphicon.glyphicon-send
-            input.form-control(type="email", placeholder="E-mail address")
-            span.input-group-btn
-                button.btn.btn-success(type="button") Let's chat!
+        form(method="post", onsubmit="return false;").form-group
+            .input-group.input-group-lg
+                .icon-addon.addon-lg
+                    input#email.form-control(type="text", placeholder="E-mail address")
+                    label.glyphicon.glyphicon-send(for="email", rel="tooltip", title="email")
+                span.input-group-btn
+                    button#emailButton.btn.btn-success(type="submit") Let's chat!
+        p#emailError.dark.collapse Please enter a valid email.
+
 
     #nav-bottom.text-center
         ul.list-inline
             li.col-md-3.col-xs-3.text-left IMG
             #inner.col-md-6.col-xs-6
                 ul.list-inline
-                    li #[a(href="/apps") Apps]
-                    li #[a(href="/gadgets") Gadgets]
-                    li #[a(href="/science") Science]
-                    li #[a(href="/nature") Nature]
-                    li #[a(href="/creative") Creative]
+                    li #[a(href="/apps", alt="Apps") Apps]
+                    li #[a(href="/gadgets", alt="Gadgets") Gadgets]
+                    li #[a(href="/science", alt="Science") Science]
+                    li #[a(href="/nature", alt="Nature") Nature]
+                    li #[a(href="/creative", alt="Creative") Creative]
             li.col-md-3.col-xs-3.text-right #[span.glyphicon.glyphicon-copyright-mark] 2016 Great Simple
