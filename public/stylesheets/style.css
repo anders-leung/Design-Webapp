@@ -56,6 +56,15 @@ nav {
     background: transparent;
 }
 
+#trial-button:active,
+#trial-button:focus,
+#trial-button.active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
 
 /* Graph styles */
 #graph {
@@ -176,7 +185,7 @@ nav {
     font-family: serif;
     font-style: italic;
     font-weight: bold;
-    padding: 65% 0 0 15%;
+    padding: 52% 15% 5% 0;
     -webkit-transform: rotate(-50deg);
     -moz-transform: rotate(-50deg);
     -o-transform: rotate(-50deg);
@@ -211,14 +220,22 @@ nav {
     -webkit-appearance: none;
     outline: none;
     background: transparent;
+    border-right: 0;
+}
+
+#interact .glyphicon-send {
+    color: #e1e8ee;
+    margin-right: -15px;
+}
+
+#interact input {
+    height: 60px;
+    border-left: 0;
+    text-align: left;
 }
 
 #interact .btn-success {
     width: 140px;
-    height: 60px;
-}
-
-#interact input {
     height: 60px;
 }
 
@@ -233,6 +250,11 @@ nav {
 
 #nav-bottom li, #nav-bottom a {
     color: #dbdfe2;
+    text-decoration: none;
+}
+
+#nav-bottom a:hover {
+    color: #43484d;
 }
 
 #nav-bottom #inner li {
@@ -284,19 +306,24 @@ nav {
     }
 }
 
+@media (min-width:987px) {
+    .corner-info h4 {
+        padding: 50% 0 15% 0;
+    }
+}
+
 @media only screen and (min-device-width:992px) and (max-device-width : 1281px) {
     #licenses h1, #licenses p {
         width: 100%;
     }
 
     #interact {
-        width: 75%;
     }
 }
 
 @media (min-width:1281px) { /* hi-res laptops and desktops */
     .corner-info h4 {
-        padding: 50% 0 0 0;
+        padding: 45% 0 15% 0;
     }
 
     #licenses h1 {
